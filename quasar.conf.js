@@ -32,6 +32,7 @@ module.exports = function (ctx) {
       // all: true, // --- includes everything; for dev only!
 
       components: [
+        'QColor',
         'QLayout',
         'QHeader',
         'QDrawer',
@@ -44,7 +45,8 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QSelect'
       ],
 
       directives: [
@@ -76,6 +78,12 @@ module.exports = function (ctx) {
             formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
         })
+      },
+      chainWebpack (chain) {
+        chain.module.rule('pug')
+          .test(/\.pug$/)
+          .use('pug-plain-loader')
+            .loader('pug-plain-loader')
       }
     },
 
