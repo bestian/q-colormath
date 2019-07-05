@@ -26,6 +26,11 @@
             q-icon(name='repeat')
           q-item-section
             | {{$t('aladin')}}
+        q-item(clickable='', @click.native="$router.push('/primes')", v-ripple='')
+          q-item-section(avatar='')
+            q-icon(name='slow_motion_video')
+          q-item-section
+            | {{$t('primes')}}
         q-item-label(header='') {{$t('setting')}}
         q-item
           q-color.my-picker(v-model='rgb', inline='')

@@ -5,6 +5,9 @@
     .text-h3(v-if="loosing") {{$t('you_loose!')}}
     .q-pa-md
       .row
+        .col-12
+          q-select(v-model="cards", :label="$t('cards')", @input="reset", :options="[10, 15, 20, 25, 30]")
+      .row
         .col-3
           .text-h6 {{ $t('aladins') }}
         .col-3
@@ -20,7 +23,7 @@
           q-btn(color="blue") {{j}}
       .row
         .col-3(v-for = "n in myCards")
-          q-btn(size = "lg"  v-bind:style = "{ 'background-color': rgb}" @click = "take(n)") {{n}}
+          q-btn(size = "lg"  v-bind:style = "{ 'background-color': hasFactor(n) ? rgb : 'red'}" @click = "take(n)") {{n}}
 </template>
 
 <script>
@@ -31,9 +34,9 @@ export default {
     return {
       winning: false,
       loosing: false,
+      cards: 10,
       myCards: [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-        11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10
       ],
       aladins: [],
       jafars: []
@@ -43,13 +46,17 @@ export default {
     reset: function () {
       this.winning = false
       this.loosing = false
-      this.myCards = [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
-        11, 12, 13, 14, 15, 16, 17, 18, 19, 20
-      ]
+      this.myCards = []
+      for (var i = 1; i <= this.cards; i++) {
+        this.myCards.push(i)
+      }
       this.aladins = []
       this.jafars = []
       this.$forceUpdate()
+    },
+    hasFactor: function (n) {
+      var factors = this.myCards.filter((o) => { return n % o === 0 })
+      return factors.length > 1
     },
     take: function (n) {
       var factors = this.myCards.filter((o) => { return n % o === 0 })
