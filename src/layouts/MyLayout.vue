@@ -57,6 +57,6 @@ export default {
   }
 
   .column {
-    text-align: left;
+    text-align: left !important;
   }
 </style>

@@ -5,7 +5,7 @@ export default {
   '/': 'Factors and Multiples',
   failed: 'Action failed',
   success: 'Action was successful',
-  lang: 'Language'
+  lang: 'Language',
   game: 'game',
   m_color: 'coloring multiples',
   setting: 'setting'

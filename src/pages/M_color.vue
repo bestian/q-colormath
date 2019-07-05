@@ -6,7 +6,7 @@
         span.bold(v-if = "myNum !== 1000") {{myNum}}的倍數
     .q-pa-md
       .row(v-for = "i in [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]")
-        .column(v-for = "j in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
+        .col(v-for = "j in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]")
           a(@click = "makeColor(i+j)" v-bind:style = "{ 'background-color' : (i+j) % myNum == 0 ? rgb : 'white'}" v-bind:class = "{ 'color' : (i+j) % myNum == 0, 'small': i+j == 100}") {{i + j}}
 </template>
 
@@ -32,7 +32,7 @@ export default {
   padding: 0 !important;
 }
 
-.column {
+.col {
   text-align: right;
   padding: 0 !important;
   overflow: hidden;
@@ -47,6 +47,7 @@ a {
   width: 100%;
   padding: 6px 2px;
   border: 1px black solid;
+  transition: all .8s ease;
 }
 
 .color {

@@ -1,10 +1,11 @@
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+      <img alt="Start" src="~assets/Icon.png" @click = "$router.push('/m_color')">
   </q-page>
 </template>
 
 <style>
+
 </style>
 
 <script>
