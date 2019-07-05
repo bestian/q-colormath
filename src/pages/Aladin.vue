@@ -6,7 +6,7 @@
     .q-pa-md
       .row
         .col-3(v-for = "n in myCards")
-          q-btn(@click = "take(n)") {{n}}
+          q-btn(size = "lg" color="orange" @click = "take(n)") {{n}}
       .row
         .col-3
           .text-h6 {{ $t('aladins') }}
