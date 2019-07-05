@@ -23,7 +23,7 @@
             | {{$t('m_color')}}
         q-item(clickable='', @click.native="$router.push('/aladin')", v-ripple='')
           q-item-section(avatar='')
-            q-icon(name='format_color_fill')
+            q-icon(name='repeat')
           q-item-section
             | {{$t('aladin')}}
         q-item-label(header='') {{$t('setting')}}

@@ -5,27 +5,28 @@
     .text-h3(v-if="loosing") {{$t('you_loose!')}}
     .q-pa-md
       .row
-        .col-3(v-for = "n in myCards")
-          q-btn(size = "lg" color="orange" @click = "take(n)") {{n}}
-      .row
         .col-3
           .text-h6 {{ $t('aladins') }}
         .col-3
-          .text-h6 {{ $t('total:') }} {{sum(aladins)}}
+          .text-h6 {{ $t('total') }} {{sum(aladins)}}
         .col-3(v-for = "a in aladins")
           q-btn(color="green") {{a}}
       .row
         .col-3
           .text-h6 {{ $t('jafars') }}
         .col-3
-          .text-h6 {{ $t('total:') }} {{sum(jafars)}}
+          .text-h6 {{ $t('total') }} {{sum(jafars)}}
         .col-3(v-for = "j in jafars")
           q-btn(color="blue") {{j}}
+      .row
+        .col-3(v-for = "n in myCards")
+          q-btn(size = "lg"  v-bind:style = "{ 'background-color': rgb}" @click = "take(n)") {{n}}
 </template>
 
 <script>
 export default {
   name: 'Aladin',
+  props: ['rgb'],
   data () {
     return {
       winning: false,

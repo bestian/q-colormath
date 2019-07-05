@@ -17,5 +17,6 @@ export default {
   aladins: '阿拉丁',
   jafars: '魔法師',
   'you_win!': '你勝利了!',
-  'you_loose!': '你輸了!'
+  'you_loose!': '你輸了!',
+  total: '總和'
 }
