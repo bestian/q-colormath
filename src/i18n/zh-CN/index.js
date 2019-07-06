@@ -1,0 +1,31 @@
+// This is just an example,
+// so you can safely delete all default props below
+
+export default {
+  '/': '因数与倍数',
+  '/m_color': '因倍数着色',
+  '/aladin': '阿拉丁与魔法师',
+  '/primes': '筛质数',
+  'aladin': '阿拉丁与魔法师',
+  primes: '筛质数',
+  start: '开始',
+  stop: '停止',
+  step: '步骤：',
+  failed: '失败',
+  success: '成功',
+  lang: '语言',
+  home: '首页',
+  game: '游戏',
+  m_color: '倍数着色',
+  m_color_note: '点击任意数字，看所有它的因倍数',
+  '\'s_factors': '的因数',
+  '\'s_multiples': '的倍数',
+  setting: '设定',
+  aladin_note: '规则：你当阿拉丁。\n每当你拿走一个数字时，魔法师就会拿走它所有的因数。\n阿拉丁每次都必须给魔法师拿到因数。\n如果办不到，该数字就是魔法师的。\n最后比谁的总分多。',
+  aladins: '阿拉丁',
+  jafars: '魔法师',
+  'you_win!': '你胜利了!',
+  'you_loose!': '你输了!',
+  total: '总和',
+  cards: '卡牌张数'
+}

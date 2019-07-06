@@ -1,6 +1,6 @@
 {
   "name": "colormath",
-  "version": "0.0.1",
+  "version": "3.0.1",
   "description": "A Quasar Framework app",
   "productName": "因數與倍數",
   "cordovaId": "tw.bestian.colormath",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",
+    "@quasar/quasar-app-extension-icon-genie": "^1.0.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
