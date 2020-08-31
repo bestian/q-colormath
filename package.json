@@ -1,6 +1,6 @@
 {
   "name": "colormath",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "A Quasar Framework app",
   "productName": "因數與倍數",
   "cordovaId": "tw.bestian.colormath",

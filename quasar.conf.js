@@ -142,7 +142,8 @@ module.exports = function (ctx) {
     },
 
     cordova: {
-      // id: 'tw.bestian.colormath',
+      id: 'tw.bestian.colormath',
+      version: '3.0.3'
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
     },
 
