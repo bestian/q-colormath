@@ -19,6 +19,9 @@
           "splashscreenHash": "b551b2a708eb54691bb57211269b8edf",
           "splashscreenType": "pure",
           "backgroundColor": "#000074"
+        },
+        "pwa": {
+          "iconHash": "248a3ae60ffc22e395bf459665024848"
         }
       }
     }
